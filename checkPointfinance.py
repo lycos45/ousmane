@@ -1,5 +1,4 @@
 import pandas as pd
-from pandas_profiling import ProfileReport
 from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
@@ -10,8 +9,7 @@ import streamlit as st
 data = pd.read_csv("C:/Users/ousma/Documents/Gomycode/Financial_inclusion_dataset.csv")
 print("Quelques informatons de notre base")
 print(data.info())
-report=ProfileReport(data,title="Financial inclusion")
-#report.to_file("rapport_pandas_profiling.html")
+
 print("Voyons combien de donnees manquantes avons-nous ?")
 print(data.isnull().sum())
 
