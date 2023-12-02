@@ -11,7 +11,7 @@ data = pd.read_csv("C:/Users/ousma/Documents/Gomycode/Financial_inclusion_datase
 print("Quelques informatons de notre base")
 print(data.info())
 report=ProfileReport(data,title="Financial inclusion")
-report.to_file("rapport_pandas_profiling.html")
+#report.to_file("rapport_pandas_profiling.html")
 print("Voyons combien de donnees manquantes avons-nous ?")
 print(data.isnull().sum())
 
